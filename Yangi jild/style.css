@@ -1,0 +1,252 @@
+/* Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background-color: #34a853;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #34a853;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.nav-btn.active {
+    border-bottom: 3px solid #fff;
+}
+
+.nav-btn:hover {
+    color: #d4ffd8;
+}
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* App Information Section */
+.app-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.app-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.app-details {
+    color: #333;
+}
+
+.app-details h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+.recommended {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: 8px solid dodgerblue;
+}
+
+.app-details p {
+    font-size: 14px;
+    color: #555;
+}
+
+.download-buttons {
+    width: 300px;
+    height: 100px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.install-btn {
+    padding: 15px 20px;
+    background: dodgerblue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+/* Recommended Apps Section */
+.recommended-section h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33.33% - 10px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 70%;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .app-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons button {
+        width: 100%;
+    }
+
+    .app-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar input {
+        width: 60%;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .nav-btn {
+        flex-grow: 1;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card {
+        width: 80px;
+    }
+
+    .banner-img {
+        max-height: 150px;
+    }
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: white;
+}
+
+.down-text {
+    width: 100%;
+    height: 5=30dvh;
+    text-align: center;
+    font-size: 20px;
+    border-top: 8px solid dodgerblue;
+    border-bottom: 8px solid dodgerblue;
+}
